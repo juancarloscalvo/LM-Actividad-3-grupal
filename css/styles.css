@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+header, nav, section, aside, footer {
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    background-image: url('../img/asesoria-banner.jpg');
+    background-size: cover;
+    color: black;
+}
+
+.banner h1 {
+    width: 700px;
+    margin: 0;
+    font-size: 4em;
+    color: #2196F3;
+    background-color: #3333339d;
+}
+
+header {
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #10324f;
+}
+ul{
+    list-style: none;
+}
+/*A continuación, daremos estilo a nuestro menú principal, contenido en la clase nav*/
+.nav li a{
+    background-color: #10324f;
+    color:azure;
+    text-decoration: none;
+    padding: 10px 15px;
+     display: block;
+}
+
+.nav li a:hover{
+    background-color: rgb(44, 109, 174);
+
+}
+.nav > li {
+    /*Indicamos que los elementos directos li que están en nav, tengan la siguiente característica*/
+    float:left;
+}
+
+.nav li ul li a {
+    background-color: rgb(6, 16, 108);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+/* Redondeo en la primera opción */
+.nav li ul li:first-child a {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Redondeo en la última opción */
+.nav li ul li:last-of-type a {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.nav li ul {
+    background-color: rgba(0, 0, 0, 0);
+    /*Ocultamos los submenus para luego mostrarlos*/
+    display: none;
+    /*Establer una posición absoluta a los submenus, con un tamaño mínimo de anchura para que todos sean iguales*/
+    position: absolute;
+    min-width: 150px;
+}
+
+.nav li:hover > ul{
+    /*Mostramos los submenis cuando pasemos el ratón por encima de la opoción marcada*/
+    display: block;
+}
+.nav li ul li{
+    position:relative;
+}
+
+.visitando {
+    background-color: rgb(61, 133, 205) !important;
+}
+
+.contenedor {
+    flex: 1;
+}
+
+.contenedor > section {
+    flex: 1 1 60%;
+}
+.contenedor > aside {
+    flex: 1 1 40%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+section header {
+    background-color: #10324f;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section article {
+    flex: 1;
+    overflow: auto;
+    background-color: #f1f1f1;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.contenedor section header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.contenedor section article p {
+    text-align: justify;
+}
+.contenedor section article .imagen {
+    width: 300px;
+    height: auto;
+    float: right;
+    display: block;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+section footer {
+    background-color: #2196F3;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+aside {
+    padding: 15px;
+    text-align: center;
+}
+
+aside h2 {
+    margin: 0;
+    color: rgb(168, 14, 14);
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    font-size: 2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+aside .bloque {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+aside .bloque h3 {
+    margin: 0;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+aside .bloque p {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+aside .bloque .fecha {
+    font-size: 0.9em;  /* Tamaño más pequeño */
+    color: #888;      /* Color gris suave */
+    margin-top: 10px; /* Espaciado para que no quede pegado al párrafo */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
