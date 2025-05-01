@@ -10,7 +10,7 @@
     padding: 30px;
 }
 
-.mapa-ubicacion {
+.contenedor .mapa-ubicacion {
     background-color: #10324f;
 }
 
@@ -41,7 +41,7 @@
     margin-top: 20px;
 }
 
-.informacion-contacto {
+.contenedor .informacion-contacto {
     background-color: #ffb84d;
 }
 
@@ -91,7 +91,7 @@
     text-decoration: underline;
 }
 
-.como-llegar {
+.contenedor .como-llegar {
     background-color: #10324f;
 }
 
@@ -128,6 +128,10 @@
     left: 0;
     top: 5px;
     font-size: 1.2em;
+}
+
+.contenedor .visitanos {
+    background-color: whitesmoke;
 }
 
 .visitanos p {
