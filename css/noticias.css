@@ -1,4 +1,4 @@
-.noticias-grid {
+.contenedor {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
@@ -6,24 +6,29 @@
 }
 
 .noticia-card {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
+.noticia-cabecera {
+    background-color: #10324f;
+    margin: -20px -20px 20px -20px; /* compensa el padding de .noticia-card */
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
 .noticia-card:hover {
     transform: translateY(-5px);
-    background-color: rgb(246, 240, 233);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .noticia-titulo {
-    color: #333;
+    color: white;
     font-size: 1.6em;
     margin-bottom: 15px;
     line-height: 1.3;
@@ -37,7 +42,7 @@
 }
 
 .noticia-entrada {
-    color: #555;
+    color: black;
     line-height: 1.7;
     margin-bottom: 25px;
     text-align: justify;
@@ -45,7 +50,7 @@
 
 .noticia-leer-mas {
     display: block;
-    background-color: #007bff;
+    background-color: #ffb84d;
     color: white;
     padding: 12px 20px;
     text-decoration: none;
