@@ -1,0 +1,173 @@
+section {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-principal);
+    margin: 30px 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-bottom: 100px;
+}
+section h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color-secundario);
+    font-size: 2.5em;
+}
+
+section p {
+    color: white;
+    padding: 20px 100px;
+    text-align: justify;
+}
+.contenedor-galeria {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-principal);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.contenedor-galeria li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.contenedor-galeria ul:hover li {
+    width: 80px;
+    filter: brightness(50%);
+}
+
+.contenedor-galeria ul li:hover {
+    width: 640px;
+    filter: brightness(100%);
+}
+
+.contenedor-galeria li img {
+    display: block;
+    width: 900px;
+    height: 100%;
+}
+
+.titulo-imagen {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+    animation: cambia-color 10s linear infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes cambia-color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+    
+}
+
+.titulo-imagen a {
+    display: block;
+    color: var(--color-secundario);
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    text-shadow: 0 1px 2px black;
+    transition: all 0.5s ease;
+}
+
+.contenedor-galeria ul li:hover .titulo-imagen {
+    top: 0;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-imagen:hover a {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.titulo-imagen:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.contenedor-galeria ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Media query para diseño responsive */
+@media (max-width: 1218px) {
+    section {
+        flex-direction: column;
+        margin: 20px;
+        padding-bottom: 50px;
+    }
+
+    section h1 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .contenedor-galeria {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .contenedor-galeria ul {
+        display: block;
+    }
+
+    .contenedor-galeria li {
+        width: 100%;
+        float: none;
+        box-shadow: none;
+        transition: none;
+        margin-bottom: 50px;
+    }
+
+    .contenedor-galeria ul:hover li,
+    .contenedor-galeria ul li:hover {
+        width: 100%;
+        filter: none;
+    }
+
+    .contenedor-galeria li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-imagen {
+        position: static;
+        gap: 50px;
+        animation: none;
+        box-shadow: none;
+    }
+
+    .titulo-imagen a {
+        font-size: 1.2em;
+        padding: 10px;
+        color: var(--color-secundario);
+        text-shadow: none;
+        transform: none;
+        transition: none;
+    }
+}
