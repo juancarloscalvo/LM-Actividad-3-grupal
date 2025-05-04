@@ -144,6 +144,10 @@
 
 /* Media queries para hacerlo responsive (ajustes básicos) */
 @media (max-width: 768px) {
+    .contenedor {
+        padding: 20px;
+    }
+    
     .mapa-embed iframe {
         height: 300px;
     }

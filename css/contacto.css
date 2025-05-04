@@ -146,11 +146,16 @@
         grid-template-columns: 1fr;
     }
 
-    .formulario-grid .campo textarea {
+    .formulario-grid .campo.textarea,
+    .formulario-grid .botones {
         grid-column: 1;
     }
 
-    .formulario-grid .campo.checkbox-group {
-        grid-column: 1;
+    .formulario-grid .botones {
+        flex-direction: column;
+    }
+
+    .formulario-grid .botones button {
+        width: 100%;
     }
 }

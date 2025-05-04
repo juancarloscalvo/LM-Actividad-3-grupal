@@ -148,19 +148,14 @@
 
 /* Media queries para hacerlo responsive */
 @media (max-width: 768px) {
-    .presentacion {
-        grid-template-columns: 1fr;
+    .contenedor {
+        padding: 20px;
     }
 
+    .contenedor .presentacion {
+        display: block;
+    }
     .imagen-presentacion {
         display: none;
-    }
-
-    .valores-lista {
-        grid-template-columns: 1fr;
-    }
-
-    .equipo-lista {
-        grid-template-columns: 1fr;
     }
 }

@@ -67,12 +67,11 @@
     background-color: #0056b3;
 }
 
-.contenedor {
-    padding: 20px;
-}
-
 /* Media query para diseño responsive */
 @media (max-width: 768px) {
+    .contenedor {
+        padding: 10px !important;
+    }
     .noticias-grid {
         grid-template-columns: 1fr;
         padding: 20px;
