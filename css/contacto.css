@@ -1,0 +1,156 @@
+.contenedor-contacto {
+    /* Quiero mostrar el formulario en dos columnas, para ello uso display grid, con un template de 1 dos columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 100px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.info-contacto {
+    padding: 30px;
+    background-color: var(--color-principal);
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.info-contacto h2 {
+    color: var(--color-secundario);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-contacto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.info-contacto ul {
+    padding: 0;
+}
+
+.info-contacto ul li {
+    margin-bottom: 10px;
+}
+
+.info-contacto ul li i {
+    margin-right: 15px;
+    color: var(--color-secundario);
+}
+
+.formulario-contacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.formulario-contacto h2 {
+    color: var(--color-principal);
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 10px;
+}
+
+.formulario-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario-grid .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-grid .campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-principal);
+}
+
+.formulario-grid .campo input[type="text"],
+.formulario-grid .campo input[type="email"],
+.formulario-grid .campo input[type="tel"],
+.formulario-grid .campo input[type="number"],
+.formulario-grid .campo input[type="date"],
+.formulario-grid .campo input[type="time"],
+.formulario-grid .campo select,
+.formulario-grid .campo input[type="file"],
+.formulario-grid .campo textarea {
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.formulario-grid .campo.textarea {
+    /* Para que el textarea ocupe las dos columnas, empieza en la columna 1 y ocupa dos columnas */
+    grid-column: 1 / span 2;
+}
+
+
+.formulario-grid .campo.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-grid .botones {
+    grid-column: 1 / span 2;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.formulario-grid .botones button {
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+.formulario-grid .botones button[type="submit"] {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.formulario-grid .botones button[type="submit"]:hover {
+    background-color: rgb(249, 149, 0);
+    color: white;
+}
+
+.formulario-grid .botones button[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+.formulario-grid .botones button[type="reset"]:hover {
+    background-color: #bbb;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .contenedor-contacto {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .formulario-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-grid .campo textarea {
+        grid-column: 1;
+    }
+
+    .formulario-grid .campo.checkbox-group {
+        grid-column: 1;
+    }
+}

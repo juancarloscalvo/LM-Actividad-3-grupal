@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - Aesoría NovaLex</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/e1e6d9b096.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="banner">
+        <h1>Aesoría NovaLex</h1>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Noticias</a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-pen-nib"></i> Publicaciones</a></li>
+                </ul>
+            </li>
+            <li><a href="areas.html"><i class="fa-solid fa-chart-pie"></i> Areas de actuación</a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-coins"></i> Contabilidad</a></li>
+                    <li><a href="#"><i class="fa-solid fa-scale-unbalanced-flip"></i> Fiscalidad</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-tie"></i> Asesoramiento</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-briefcase"></i> Servicios</a></li>
+            <li><a href="#"><i class="fa-solid fa-medal"></i> Casos de éxito</a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i> Quiénes somos</a></li>
+            <li><a href="localizacion.html"><i class="fa-solid fa-location-dot"></i> Localización</a></li>
+            <li><a href="#" class="visitando"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor-contacto">
+        <div class="info-contacto">
+            <h2>¿Cómo podemos ayudarte?</h2>
+            <p>En NovaLex, estamos listos para responder a tus preguntas y ofrecerte la mejor asesoría. Completa el formulario de la derecha y nos pondremos en contacto contigo lo antes posible.</p>
+            <p>También puedes encontrarnos en:</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Nuestra oficina en Madrid</li>
+                <li><i class="fa-solid fa-envelope"></i>info@novalexasesoria.com</li>
+                <li><i class="fa-solid fa-phone"></i>+34 91 123 45 67</li>
+            </ul>
+        </div>
+        <div class="formulario-contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="mailto:test@test.es" method="POST">
+                <div class="formulario-grid">
+                    <div class="campo">
+                        <label for="asunto">Motivo del contacto:</label>
+                        <select id="asunto" name="asunto">
+                            <option value="-" selected>Selecciona un motivo</option>"
+                            <option value="consulta">Consulta general</option>
+                            <option value="fiscal">Asesoría fiscal</option>
+                            <option value="laboral">Asesoría laboral</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="campo">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="18" max="100">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha de contacto deseada:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="campo">
+                        <label for="hora">Hora preferida:</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+                    <div class="campo">
+                        <label for="archivo">Adjuntar archivo:</label>
+                        <input type="file" id="archivo" name="archivo">
+                    </div>
+                    <div class="campo checkbox-group">
+                        <label>¿Desea recibir nuestro boletín?</label>
+                        <div>
+                            <input type="radio" id="boletin-si" name="boletin" value="si">
+                            <label for="boletin-si">Sí</label>
+                            <input type="radio" id="boletin-no" name="boletin" value="no">
+                            <label for="boletin-no">No</label>
+                        </div>
+                    </div>
+                    <div class="campo checkbox-group">
+                        <label for="intereses">Temas de interés:</label>
+                        <div>
+                            <input type="checkbox" id="interes1" name="intereses" value="contabilidad">
+                            <label for="interes1">Contabilidad</label>
+                            <input type="checkbox" id="interes2" name="intereses" value="fiscalidad">
+                            <label for="interes2">Fiscalidad</label>
+                            <input type="checkbox" id="interes3" name="intereses" value="laboral">
+                            <label for="interes3">Laboral</label>
+                        </div>
+                    </div>
+                    <div class="campo textarea">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aqui tu mensaje..." required></textarea>
+                    </div>
+                    <div class="botones">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; NovaLex 2025 - Política de privacidad</p>
+    </footer>
+</body>
+</html>
