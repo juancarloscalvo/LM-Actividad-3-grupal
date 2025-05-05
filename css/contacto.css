@@ -1,5 +1,5 @@
 .contenedor-contacto {
-    /* Quiero mostrar el formulario en dos columnas, para ello uso display grid, con un template de 1 dos columnas */
+    /* Quiero mostrar el formulario en dos columnas, para ello uso display grid, con un template de dos columnas */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;

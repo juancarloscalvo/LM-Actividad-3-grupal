@@ -60,10 +60,11 @@ nav {
     justify-content: center;
     background-color: #10324f;
 }
+
 ul{
     list-style: none;
 }
-/*A continuación, daremos estilo a nuestro menú principal, contenido en la clase nav*/
+
 .nav li a{
     background-color: var(--color-principal);
     color:azure;
@@ -81,7 +82,6 @@ ul{
 
 }
 .nav > li {
-    /*Indicamos que los elementos directos li que están en nav, tengan la siguiente característica*/
     float:left;
 }
 
@@ -91,6 +91,7 @@ ul{
     color: #fff;
     border: 1px solid #fff;
 }
+
 /* Redondeo en la primera opción */
 .nav li ul li:first-child a {
     border-top-left-radius: 8px;
@@ -105,15 +106,12 @@ ul{
 
 .nav li ul {
     background-color: rgba(0, 0, 0, 0);
-    /*Ocultamos los submenus para luego mostrarlos*/
     display: none;
-    /*Establer una posición absoluta a los submenus, con un tamaño mínimo de anchura para que todos sean iguales*/
     position: absolute;
     min-width: 150px;
 }
 
 .nav li:hover > ul{
-    /*Mostramos los submenis cuando pasemos el ratón por encima de la opoción marcada*/
     display: block;
 }
 .nav li ul li{
@@ -211,7 +209,7 @@ aside h2 {
 aside .cabecera {
     background-color: var(--color-principal);
     color: white;
-    margin: -10px -10px 10px -10px; /* compensa el padding de .noticia-card */
+    margin: -10px -10px 10px -10px;
     padding: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -237,9 +235,9 @@ aside .bloque p {
 }
 
 aside .bloque .fecha {
-    font-size: 0.9em;  /* Tamaño más pequeño */
-    color: #888;      /* Color gris suave */
-    margin-top: 10px; /* Espaciado para que no quede pegado al párrafo */
+    font-size: 0.9em;
+    color: #888;      
+    margin-top: 10px;
 }
 
 footer {
@@ -250,7 +248,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* para que se adapte en móvil */
+    flex-wrap: wrap;
 }
 
 footer p {
