@@ -1,7 +1,7 @@
 .contenedor {
     /* Uso un display grid para que los bloques de noticias aparezcan en columnas */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Le indico que el tamaño mínimo de cada columna es 400px. y se ajuste automaticamente al tamaño disponible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Le indico que el tamaño mínimo de cada columna es 400px. y se ajuste automaticamente al tamaño disponible */
     gap: 50px;
     padding: 30px 100px !important;
     background-color: whitesmoke;
