@@ -138,8 +138,21 @@
 
 @media (max-width: 768px) {
     .contenedor-contacto {
-        grid-template-columns: 1fr;
+        display: block;
         padding: 20px;
+        max-width: 90%;
+    }
+
+    .info-contacto {
+        margin-bottom: 10px;
+    }
+
+    .info-contacto h2 {
+        font-size: 1.5em;
+    }
+
+    .formulario-grid .campo {
+        width: 70%;
     }
 
     .formulario-grid {
@@ -153,6 +166,7 @@
 
     .formulario-grid .botones {
         flex-direction: column;
+        width: 70%;
     }
 
     .formulario-grid .botones button {
